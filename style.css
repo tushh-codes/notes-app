@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'poppins', sans-serif;
+  margin: 0;
+  background-color: #f6fafd;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#keep {
+  margin: 10px 15px 10px 30px;
+}
+
+.heading {
+  background: #9cecfb; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3d61b4,
+    #a0c2f8,
+    #b2bef5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #3d61b4,
+    #a0c2f8,
+    #b2bef5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  width: 100vw;
+  height: 6rem;
+}
+.heading h1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  font-size: 2.3rem;
+}
+.add {
+  background-color: #3d61b4;
+  position: fixed;
+  top: 7rem;
+  right: 3rem;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transform: translateZ(0);
+  transition: transform 0.25s ease out;
+}
+
+.add:hover {
+  transform: scale(1.1);
+}
+
+.note {
+  margin: 20px;
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.3);
+  /* border: 0.5px solid gray; */
+}
+
+.note .tools {
+  background-color: #3d61b4;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+
+.note .tools button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.note .main {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  background-color: #eee;
+  font-size: 1.3rem;
+}
+
+.note textarea {
+  width: 100%;
+  height: 350px;
+  border: none;
+  font-family: inherit;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+.note .hidden {
+  display: none;
+}
